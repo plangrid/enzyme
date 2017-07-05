@@ -2,7 +2,7 @@
 import isEqual from 'lodash/isEqual';
 import React from 'react';
 import is from 'object-is';
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 import entries from 'object.entries';
 import functionName from 'function.prototype.name';
 import {
