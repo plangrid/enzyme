@@ -6,7 +6,7 @@
   "main": "build",
   "scripts": {
     "prepublish": "not-in-publish || (npm run clean && npm run build && safe-publish-latest)",
-    "postinstall": "npm run build",
+    "postinstall": "npm install && npm run build",
     "preversion": "npm run clean && npm run check",
     "postversion": "git push && git push --tags && npm run clean && npm run docs:publish",
     "version": "npm run build",
